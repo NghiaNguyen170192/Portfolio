@@ -98,11 +98,8 @@ main {
         .cert-div {
             margin: 15px 0 15px 0;
             .certification-img {
-                // grid-gap: 30px;
-                // grid-template-areas: 'cert1 cert2 cert3';
-                // grid-template-columns: repeat(3, 1fr);
-                width: 100px;
-                height: 100px;
+                width: 200px;
+                height: 200px;
             }
             .cert-1 {
                 grid-area: cert1;

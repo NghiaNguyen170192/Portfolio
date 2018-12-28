@@ -186,8 +186,8 @@ main {
     .about-info .certification .cert-div {
       margin: 15px 0 15px 0; }
       .about-info .certification .cert-div .certification-img {
-        width: 100px;
-        height: 100px; }
+        width: 200px;
+        height: 200px; }
       .about-info .certification .cert-div .cert-1 {
         grid-area: cert1; }
       .about-info .certification .cert-div .cert-2 {
