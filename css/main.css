@@ -164,7 +164,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3' 'job4 job5 job6';
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3' 'job4 job5 job6';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -248,11 +248,17 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  main {
+    align-items: center;
+    text-align: center; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  main {
+    align-items: center;
+    text-align: center; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -281,7 +287,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3' 'job4' 'job5' 'job6';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
