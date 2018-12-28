@@ -6,8 +6,7 @@
   "homepage": "http://nghianguyen.online",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist",
-    "run": ""
+    "deploy": "gh-pages -d dist"
   },
   "author": "Brad Traversy",
   "license": "MIT",
