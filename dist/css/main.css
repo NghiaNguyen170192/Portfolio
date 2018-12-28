@@ -118,7 +118,8 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 400;
+  text-align: center; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
@@ -148,7 +149,10 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  min-height: calc(100vh - 60px);
+  text-align: center;
+  align-items: center;
+  display: block; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -164,7 +168,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3' 'job4 job5 job6';
+  grid-template-areas: 'bioimage bio certification' 'job1 job2 job3' 'job4 job5 job6';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -173,7 +177,23 @@ main {
     border: #1aa0ee 3px solid; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    text-align: left; }
+  .about-info .certification {
+    grid-area: certification;
+    font-size: 1.5rem;
+    text-align: center; }
+    .about-info .certification .cert-div {
+      margin: 15px 0 15px 0; }
+      .about-info .certification .cert-div .certification-img {
+        width: 100px;
+        height: 100px; }
+      .about-info .certification .cert-div .cert-1 {
+        grid-area: cert1; }
+      .about-info .certification .cert-div .cert-2 {
+        grid-area: cert2; }
+      .about-info .certification .cert-div .cert-3 {
+        grid-area: cert3; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -189,7 +209,8 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #1aa0ee 5px solid; }
+    border-bottom: #1aa0ee 5px solid;
+    text-align: left; }
 
 .projects {
   display: grid;
@@ -255,12 +276,9 @@ main {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -281,7 +299,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'certification' 'job1' 'job2' 'job3' 'job4' 'job5' 'job6';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }

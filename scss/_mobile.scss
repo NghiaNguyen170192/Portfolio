@@ -9,15 +9,12 @@
 @include mediaLg {
   .projects {
     grid-template-columns: repeat(3, 1fr);
-  }
+  } 
 }
 
 // Tablets & Small Laptops
 @include mediaMd {
-  main {
-    align-items: center;
-    text-align: center;
-
+  main {  
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
@@ -56,9 +53,13 @@
     grid-template-areas:
       'bioimage'
       'bio'
+      'certification'
       'job1'
       'job2'
-      'job3';
+      'job3'
+      'job4'
+      'job5'
+      'job6';
 
     grid-template-columns: 1fr;
   }
