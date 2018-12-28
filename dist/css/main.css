@@ -273,7 +273,10 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .about-info {
+    grid-template-areas: 'bioimage bio' 'certification certification' 'job1 job2' 'job3 job4' 'job5 job6';
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main .lg-heading {
@@ -299,8 +302,8 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'certification' 'job1' 'job2' 'job3' 'job4' 'job5' 'job6';
-    grid-template-columns: 1fr; }
+    grid-template-areas: 'bioimage' 'bio' 'certification' 'job1' 'job2' 'job3' 'job4' 'job5' 'job6';
+    grid-template-columns: repeat(1, 1fr); }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
